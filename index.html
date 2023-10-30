@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>   
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Tours and Travellers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Chelsea Market', cursive;
+        }
+         .navbar-brand {
+            font-family: 'Chelsea Market';
+            font-size: 40px;
+            margin-left: 300px;
+         
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">VR Tours and Travellers</a>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </header>
+
+    <section class="hero bg-primary text-light text-center py-5">
+        <div class="container">
+            <h2>Your Ultimate International Travel Experience Awaits</h2>
+            <p>Discover breathtaking destinations with VR Tours and Travellers.</p>
+            <a href="domestic.html" class="btn btn-light" target="_blank">Explore Domestically</a>
+        </div>
+    </section>
+
+    <section class="tours bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Featured Tours</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tour card">
+                        <img src="tour1.jpg" alt="Tour 1" class="card-img-top" width="250" height="250">
+                        <div class="card-body">
+                            <h3 class="card-title">Discover Dubai Delights</h3>
+                            <p class="card-text">Duration: 5 Days / 4 Nights</p>
+                            <p>Price per Person: ₹ 45,000 INR</p>
+                            <p><strong>Package Inclusions:</strong></p>
+                            <ul>
+                                <li>4 nights stay in a 3-star hotel in Dubai.</li>
+                                <li>Daily breakfast at the hotel.</li>
+                                <li>Airport pick-up and drop-off.</li>
+                                <li>Dubai city tour with English-speaking guide.</li>
+                                <li>Desert Safari with BBQ dinner and entertainment.</li>
+                                <li>Visit to Burj Khalifa (at the Top - 124th floor) with pre-booked tickets.</li>
+                                <li>Evening Dhow Cruise with buffet dinner.</li>
+                                <li>Half-day visit to Dubai Mall and Dubai Fountain Show.</li>
+                                <li>Dubai Frame entrance ticket.</li>
+                                <li>Miracle Garden and Butterfly Garden visit.</li>
+                                <li>Air-conditioned vehicle for all transfers and tours.</li>
+                                <li>Dubai tourist visa included.</li>
+                                <li>Daily breakfast at the hotel.</li>
+                                <li>One BBQ dinner during the Desert Safari.</li>
+                                <li>One buffet dinner during the Dhow Cruise.</li>
+                                <li>24/7 customer support.</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary" onclick="showMore('tour1')">See More</a>
+                            <div id="tour1" style="display: none;">
+                                <p><strong>Package Exclusions:</strong></p>
+                                <ul>
+                                    <li>International airfare.</li>
+                                    <li>Any personal expenses and additional meals not mentioned.</li>
+                                    <li>Travel insurance.</li>
+                                    <li>Optional tours and activities not included in the package.</li>
+                                    <li>Visa fees for extending the stay or any additional requirements.</li>
+                                </ul>
+                                <p><strong>Terms and Conditions:</strong></p>
+                                <ul>
+                                    <li>Rates are per person based on double occupancy.</li>
+                                    <li>Prices are subject to availability and may change based on your travel dates.</li>
+                                    <li>Itinerary is subject to change based on local conditions.</li>
+                                    <li>Booking confirmation is subject to full payment.</li>
+                                    <li>Cancellation fees may apply as per the agency's policies.</li>
+                                    <a href="#" class="btn btn-primary" onclick="bookNow('Discover Dubai Delights')">Book Now</a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+    <div class="tour card">
+        <img src="Egypt.jpg" alt="Egypt" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">Explore Egypt Extravaganza</h3>
+            <p class="card-text">Discover the enchanting wonders of Egypt.</p>
+            <p>Package Includes:</p>
+            <ul>
+                <li>6 nights stay in a 4-star hotel in Cairo.</li>
+                <li>Daily breakfast at the hotel.</li>
+                <li>Airport pick-up and drop-off.</li>
+                <li>Guided tour of the Pyramids and Sphinx.</li>
+                <li>Nile River cruise with dinner and entertainment.</li>
+                <li>Visit to the Egyptian Museum.</li>
+            </ul>
+            <p>Price: ₹ 55,000 INR</p>
+            <a href="#" class="btn btn-primary" onclick="bookNow('Egypt Extravaganza')">Book Now</a>
+
+        </div>
+    </div>
+</div>
+
+<!-- USA Tour Package -->
+<div class="col-md-6">
+    <div class="tour card">
+        <img src="USA.jpg" alt="USA" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">USA Adventure</h3>
+            <p class="card-text">Embark on an unforgettable adventure in the USA.</p>
+            <p>Package Includes:</p>
+            <ul>
+                <li>10 nights stay in various cities (New York, Los Angeles, and more).</li>
+                <li>Daily breakfast at the hotels.</li>
+                <li>Airport transfers.</li>
+                <li>Explore New York, Los Angeles, and more.</li>
+                <li>National park tours and hikes.</li>
+            </ul>
+            <p>Price: ₹ 75,000 INR</p>
+            <a href="#" class="btn btn-primary" onclick="bookNow('USA Adventure')">Book Now</a>
+
+        </div>
+    </div>
+</div>
+
+<!-- United Kingdom Tour Package -->
+<div class="col-md-6">
+    <div class "tour card">
+        <img src="UnitedKingdom.jpg" alt="United Kingdom" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">UK Getaway</h3>
+            <p class="card-text">Experience the charm and beauty of the United Kingdom.</p>
+            <p>Package Includes:</p>
+            <ul>
+                <li>5 nights stay in cozy cottages.</li>
+                <li>Traditional British breakfast daily.</li>
+                <li>Airport transfers.</li>
+                <li>Visit historic landmarks and castles.</li>
+                <li>Afternoon tea experiences.</li>
+            </ul>
+            <p>Price: ₹ 50,000 INR</p>
+            <a href="#" class="btn btn-primary" onclick="bookNow('UK Getaway')">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- South Africa Tour Package -->
+<div class="col-md-6">
+    <div class="tour card">
+        <img src="SouthAfrica.jpg" alt="South Africa" class="card-img-top">
+        <div class="card-body">
+            <h3 class="card-title">South African Safari</h3>
+            <p class="card-text">Embark on a thrilling safari adventure in South Africa.</p>
+            <p>Package Includes:</p>
+            <ul>
+                <li>7 nights stay in game lodges.</li>
+                <li>Daily breakfast and safari meals.</li>
+                <li>Game drives and wildlife experiences.</li>
+                <li>Explore Kruger National Park and more.</li>
+                <li>Guided tours and expert rangers.</li>
+            </ul>
+            <p>Price: ₹ 60,000 INR</p>
+            <a href="#" class="btn btn-primary" onclick="bookNow('South African Safar')">Book Now</a>
+        </div>
+    </div>
+</div>
+    </section>
+
+   <footer class="text-center py-4">
+        <div class="container">
+            <p>&copy; 2023 VR Tours and Travellers</p>
+            <p>Chidiakui, Begampura, Surat</p>
+            <p><a href="#">Careers</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showMore(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function bookNow(packageName) {
+            var phoneNumber = '+919662188485'; // Replace with your WhatsApp number
+            var message = 'I want to book the ' + packageName + ' package.';
+            var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+
+</html>
