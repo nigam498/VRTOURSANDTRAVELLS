@@ -1,183 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>   
+    <title>VR Tours and Travellers</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <style>
-        body {
+         body {
             font-family: 'Chelsea Market', cursive;
         }
-
-        .navbar-brand {
+         .navbar-brand {
             font-family: 'Chelsea Market';
-            font-size: 30px;
-        }
+            font-size: 40px;
+            margin-left: 300px;
+         
 
-        @media screen and (max-width: 768px) {
-            .navbar-brand {
-                margin-left: 0;
-                text-align: center;
-            }
         }
     </style>
 </head>
+
 <body>
     <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
+            <a class="navbar-brand" href="#">VR Tours and Travellers</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">VR Tours and Travellers</a>
+            
         </div>
     </header>
+
     <section class="hero bg-primary text-light text-center py-5">
-        <div class="container">
-            <h2>Your Ultimate International Travel Experience Awaits</h2>
-            <p>Discover breathtaking destinations with VR Tours and Travellers.</p>
-            <a href="index.html" class="btn btn-light">Explore Internationally</a>
+        <div class "container">
+        <h2>Your Ultimate International Travel Experience Awaits</h2>
+        <p>Discover breathtaking destinations with VR Tours and Travellers.</p>
+        <a href="index.html" class="btn btn-light">Explore Internationally</a>
         </div>
     </section>
 
     <section class="tours bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Featured Tours</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="tour card">
-                        <img src="golden.jpg" alt="Tour 1" class="card-img-top" width="250" height="250">
-                        <div class="card-body">
-                            <h3 class="card-title">Golden Triangle Adventure</h3>
-                            <p class="card-text">Destinations: Delhi, Agra, Jaipur</p>
-                            <p class="card-text">Duration: 6 Days</p>
-                            <p class="card-text"><b>Cost: Starting from ₹15,000 per person</b></p>
-                            <p><strong>Package Inclusions:</strong></p>
+    <div class="container">
+        <h2 class="text-center">Featured Tours</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tour card">
+                    <img src="golden.jpg" alt="Tour 1" class="card-img-top" width="250" height="250">
+                    <div class="card-body">
+                        <h3 class="card-title">Golden Triangle Adventure</h3>
+                        <p class="card-text">Destinations: Delhi, Agra, Jaipur</p>
+                        <p>Duration: 6 Days</p>
+                        <p><b>Cost: Starting from ₹15,000 per person</b></p>
+                        <p><strong>Package Inclusions:</strong></p>
+                        <ul>
+                            <li>Accommodation in 3-star hotels</li>
+                            <li>Daily breakfast</li>
+                            <li>Airport/train station pickup and drop</li>
+                            <li>Sightseeing with a guide</li>
+                            <li>Entry fees to attractions</li>
+                            <li>Private air-conditioned vehicle</li>
+                            <li>Camel ride in Jaipur</li>
+                            <li>All taxes and service charges</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="showMore('tour1')">See More</a>
+                        <div id="tour1" style="display: none;">
+                            <p><strong>Package Exclusions:</strong></p>
                             <ul>
-                                <li>Accommodation in 3-star hotels</li>
-                                <li>Daily breakfast</li>
-                                <li>Airport/train station pickup and drop</li>
-                                <li>Sightseeing with a guide</li>
-                                <li>Entry fees to attractions</li>
-                                <li>Private air-conditioned vehicle</li>
-                                <li>Camel ride in Jaipur</li>
-                                <li>All taxes and service charges</li>
+                                <li>International airfare</li>
+                                <li>Any personal expenses and additional meals not mentioned</li>
+                                <li>Travel insurance</li>
+                                <li>Optional tours and activities not included in the package</li>
+                                <li>Visa fees for extending the stay or any additional requirements</li>
                             </ul>
-                            <a href="#" class="btn btn-primary" onclick="showMore('tour1')">See More</a>
-                            <div id="tour1" style="display: none;">
-                                <p><strong>Package Exclusions:</strong></p>
-                                <ul>
-                                    <li>International airfare</li>
-                                    <li>Any personal expenses and additional meals not mentioned</li>
-                                    <li>Travel insurance</li>
-                                    <li>Optional tours and activities not included in the package</li>
-                                    <li>Visa fees for extending the stay or any additional requirements</li>
-                                </ul>
-                                <p><strong>Terms and Conditions:</strong></p>
-                                <ul>
-                                    <li>Rates are per person based on double occupancy</li>
-                                    <li>Prices are subject to availability and may change based on your travel dates</li>
-                                    <li>Itinerary is subject to change based on local conditions</li>
-                                    <li>Booking confirmation is subject to full payment</li>
-                                    <li>Cancellation fees may apply as per the agency's policies</li>
-                                    <a href="#" class="btn btn-primary" onclick="bookNow('Golden Triangle Adventure')">Book Now</a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tour card">
-                        <img src="Kerala.jpg" alt="Kerala" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Kerala Backwaters Retreat</h3>
-                            <p class="card-text">Destinations: Cochin, Alleppey, Munnar</p>
-                            <p class="card-text">Duration: 7 Days</p>
-                            <p class="card-text"><b>Cost: Starting from ₹20,000 per person</b></p>
-                            <p><strong>Package Inclusions:</strong></p>
+                            <p><strong>Terms and Conditions:</strong></p>
                             <ul>
-                                <li>Accommodation in scenic resorts</li>
-                                <li>Daily breakfast</li>
-                                <li>Airport/train station pickup and drop</li>
-                                <li>Backwater houseboat cruise</li>
-                                <li>Spice plantation tour</li>
-                                <li>Visit to tea gardens</li>
-                                <li>All transfers and sightseeing</li>
-                                <li>All taxes and service charges</li>
+                                <li>Rates are per person based on double occupancy</li>
+                                <li>Prices are subject to availability and may change based on your travel dates</li>
+                                <li>Itinerary is subject to change based on local conditions</li>
+                                <li>Booking confirmation is subject to full payment</li>
+                                <li>Cancellation fees may apply as per the agency's policies</li>
+                                <a href="#" class="btn btn-primary" onclick="bookNow('Golden Triangle Adventure')">Book Now</a>
                             </ul>
-                            <a href="#" class="btn btn-primary" onclick="bookNow('Kerala Backwaters Retreat')">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tour card">
-                        <img src="Goa.jpg" alt="Goa" class="card-img-top" width="250" height="250">
-                        <div class="card-body">
-                            <h3 class="card-title">Goa Beach Escape</h3>
-                            <p class="card-text">Destinations: Goa</p>
-                            <p class="card-text">Duration: 5 Days</p>
-                            <p class="card-text"><b>Cost: Starting from ₹10,000 per person</b></p>
-                            <p><strong>Package Inclusions:</strong></p>
-                            <ul>
-                                <li>Beachfront accommodation</li>
-                                <li>Daily breakfast</li>
-                                <li>Airport pickup and drop</li>
-                                <li>Water sports activities</li>
-                                <li>North and South Goa sightseeing</li>
-                                <li>All transfers and taxes</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary" onclick="bookNow('Goa Beach Escape')">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tour card">
-                        <img src="Himalayas.jpg" alt="Himalayas" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Himalayan Adventure</h3>
-                            <p class="card-text">Destinations: Shimla, Manali, Dharamshala</p>
-                            <p class="card-text">Duration: 8 Days</p>
-                            <p class="card-text"><b>Cost: Starting from ₹25,000 per person</b></p>
-                            <p><strong>Package Inclusions:</strong></p>
-                            <ul>
-                                <li>Accommodation in charming hotels</li>
-                                <li>Daily breakfast and dinner</li>
-                                <li>Airport/train station pickup and drop</li>
-                                <li>Shimla and Manali sightseeing</li>
-                                <li>Rohtang Pass excursion</li>
-                                <li>Transfer to Dharamshala</li>
-                                <li>All transfers, taxes, and permits</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary" onclick="bookNow('Himalayan Adventure')">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tour card">
-                        <img src="Andaman.jpg" alt="Andaman" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Tropical Paradise in Andaman</h3>
-                            <p class="card-text">Destinations: Port Blair, Havelock Island, Neil Island</p>
-                            <p class="card-text">Duration: 6 Days</p>
-                            <p class="card-text"><b>Cost: Starting from ₹18,000 per person</b></p>
-                            <p><strong>Package Inclusions:</strong></p>
-                            <ul>
-                                <li>Beachfront accommodation</li>
-                                <li>Daily breakfast</li>
-                                <li>Airport pickup and drop</li>
-                                <li>Snorkeling at Elephant Beach</li>
-                                <li>Neil Island visit</li>
-                                <li>All inter-island ferry transfers</li>
-                                <li>All taxes and service charges</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary" onclick="bookNow('Tropical Paradise in Andaman')">Book Now</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="tour card">
+                    <img src="Kerala.jpg" alt="Kerala" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Kerala Backwaters Retreat</h3>
+                        <p class="card-text">Destinations: Cochin, Alleppey, Munnar</p>
+                        <p><b>Duration: 7 Days</b></p>
+                        <p>Cost: Starting from ₹20,000 per person</b></p>
+                        <p><strong>Package Inclusions:</strong></p>
+                        <ul>
+                            <li>Accommodation in scenic resorts</li>
+                            <li>Daily breakfast</li>
+                            <li>Airport/train station pickup and drop</li>
+                            <li>Backwater houseboat cruise</li>
+                            <li>Spice plantation tour</li>
+                            <li>Visit to tea gardens</li>
+                            <li>All transfers and sightseeing</li>
+                            <li>All taxes and service charges</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="bookNow('Kerala Backwaters Retreat')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tour card">
+                    <img src="Goa.jpg" alt="Goa" class="card-img-top" width="250" height="250">
+                    <div class="card-body">
+                        <h3 class "card-title">Goa Beach Escape</h3>
+                        <p class="card-text">Destinations: Goa</p>
+                        <p>Duration: 5 Days</p>
+                        <p>Cost: Starting from ₹10,000 per person</b></p>
+                        <p><strong>Package Inclusions:</strong></p>
+                        <ul>
+                            <li>Beachfront accommodation</li>
+                            <li>Daily breakfast</li>
+                            <li>Airport pickup and drop</li>
+                            <li>Water sports activities</li>
+                            <li>North and South Goa sightseeing</li>
+                            <li>All transfers and taxes</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="bookNow('Goa Beach Escape')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tour card">
+                    <img src="Himalayas.jpg" alt="Himalayas" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Himalayan Adventure</h3>
+                        <p class="card-text">Destinations: Shimla, Manali, Dharamshala</p>
+                        <p><b>Duration: 8 Days</b></p>
+                        <p><b>Cost: Starting from ₹25,000 per person</<b>b></p>
+                        <p><strong>Package Inclusions:</strong></p>
+                        <ul>
+                            <li>Accommodation in charming hotels</li>
+                            <li>Daily breakfast and dinner</li>
+                            <li>Airport/train station pickup and drop</li>
+                            <li>Shimla and Manali sightseeing</li>
+                            <li>Rohtang Pass excursion</li>
+                            <li>Transfer to Dharamshala</li>
+                            <li>All transfers, taxes, and permits</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="bookNow('Himalayan Adventure')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tour card">
+                    <img src="Andaman.jpg" alt="Andaman" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Tropical Paradise in Andaman</h3>
+                        <p class="card-text">Destinations: Port Blair, Havelock Island, Neil Island</p>
+                        <p><b>Duration: 6 Days</b></p>
+                        <p><b>Cost: Starting from ₹18,000 per person</b></p>
+                        <p><strong>Package Inclusions:</strong></p>
+                        <ul>
+                            <li>Beachfront accommodation</li>
+                            <li>Daily breakfast</li>
+                            <li>Airport pickup and drop</li>
+                            <li>Snorkeling at Elephant Beach</li>
+                            <li>Neil Island visit</li>
+                            <li>All inter-island ferry transfers</li>
+                            <li>All taxes and service charges</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="bookNow('Tropical Paradise in Andaman')">Book Now</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <footer class="text-center py-4">
         <div class="container">
@@ -188,21 +191,24 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
     <script>
         function showMore(id) {
             var x = document.getElementById(id);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
-                x.style display = "none";
+                x.style.display = "none";
             }
         }
-        function bookNow(packageName) {
-            var phoneNumber = '+919662188485'; // Replace with your WhatsApp number
-            var message = 'I want to book the ' + packageName + ' package.';
-            var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
-            window.open(whatsappURL, '_blank');
-        }
+         function bookNow(packageName) {
+        var phoneNumber = '+919662188485'; // Replace with your WhatsApp number
+        var message = 'I want to book the ' + packageName + ' package.';
+        var whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+        window.open(whatsappURL, '_blank');
+
+    }
+</script>
     </script>
 </body>
 </html>
