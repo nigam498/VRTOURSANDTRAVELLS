@@ -1,1 +1,1 @@
-<article onkeypress="alert(1)" contenteditable>test</article>
+<audio onmousemove="alert(1)">test</audio>
